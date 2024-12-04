@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingIndicatorViewController" customModule="Cupo_Express" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GWk-M3-HSD" customClass="CEView" customModule="Cupo_Express" customModuleProvider="target">
+                    <rect key="frame" x="177" y="418" width="60" height="60"/>
+                    <subviews>
+                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38l-zI-CDW">
+                            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qzh-p3-6oh">
+                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="center" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Ulz-Sr-bVk">
+                                        <rect key="frame" x="12.5" y="12.5" width="37" height="37"/>
+                                        <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ulz-Sr-bVk" firstAttribute="centerY" secondItem="qzh-p3-6oh" secondAttribute="centerY" constant="1" id="UJJ-oo-B5Z"/>
+                                    <constraint firstItem="Ulz-Sr-bVk" firstAttribute="centerX" secondItem="qzh-p3-6oh" secondAttribute="centerX" constant="1" id="m3N-I7-U6F"/>
+                                </constraints>
+                            </view>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="4NM-fJ-CIF"/>
+                                <constraint firstAttribute="width" constant="60" id="BhL-uc-99s"/>
+                            </constraints>
+                            <blurEffect style="dark"/>
+                        </visualEffectView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="38l-zI-CDW" firstAttribute="centerY" secondItem="GWk-M3-HSD" secondAttribute="centerY" id="eSV-U8-TwH"/>
+                        <constraint firstAttribute="height" constant="60" id="fyY-NL-QK3"/>
+                        <constraint firstItem="38l-zI-CDW" firstAttribute="centerX" secondItem="GWk-M3-HSD" secondAttribute="centerX" id="llF-cT-9Si"/>
+                        <constraint firstAttribute="width" constant="60" id="uSy-1e-rz2"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="GWk-M3-HSD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rAL-eX-Nh4"/>
+                <constraint firstItem="GWk-M3-HSD" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="y5R-Jd-jSj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="224.63768115942031" y="346.20535714285711"/>
+        </view>
+    </objects>
+</document>
